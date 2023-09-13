@@ -54,6 +54,7 @@ static void _emu_init(void)
 void stm32h7_draw_init(void)
 {
     frame_evt = osEventFlagsNew(NULL);
+    fps_tick = HAL_GetTick();
     lcd_init();
     lcd_set_window(0, 0, 240 - 1, 320 - 1);
     lcd_write_fb((uint8_t*)framebuffer, sizeof(framebuffer)); /* one half */
@@ -119,7 +120,6 @@ void stm32h7_emu_init(void)
     paletteRAM = port_paletteRAM;
     _load_game();
     _emu_init();
-    fps_tick = HAL_GetTick();
 }
 
 void stm32h7_emu_handle(void)

@@ -596,8 +596,8 @@ static void MX_FMC_Init(void)
   }
 
   /* USER CODE BEGIN FMC_Init 2 */
-  FMC_SDRAM_CommandTypeDef command;	// øÿ÷∆÷∏¡Ó
-  SDRAM_Initialization_Sequence(&hsdram1,&command);//≈‰÷√SDRAM
+  FMC_SDRAM_CommandTypeDef command; // øÿ÷∆÷∏¡Ó
+  SDRAM_Initialization_Sequence(&hsdram1,&command); //≈‰÷√SDRAM
   /* USER CODE END FMC_Init 2 */
 }
 
