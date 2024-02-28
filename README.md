@@ -1,5 +1,5 @@
 # STM32-GBA
-GameBoyAdvance emulator running on STM32H7.
+GameBoyAdvance Emulator running on STM32H7.
 
 ## How to use ?
 1. Copy xxx.gba to the root directory of the SD card and rename it test.gba 
@@ -19,5 +19,4 @@ GameBoyAdvance emulator running on STM32H7.
 # Special thanks to
 
 #### Reference
-- [libretro's vba-next](https://github.com/libretro/vba-next)  
-- [44670's 44vba](https://github.com/44670/44vba)
+- [libretro's vba-next](https://github.com/libretro/vba-next)
